@@ -29,4 +29,8 @@
   padding: 10px 35px;
   color: white;
 }
+
+.boostSection_button:hover {
+  cursor: pointer;
+}
 </style>

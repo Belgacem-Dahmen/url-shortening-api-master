@@ -10,25 +10,25 @@
     </div>
 
     <div class="footer_features">
-      <p>Features</p>
-      <p>Link Shortening</p>
-      <p>Branded Links</p>
-      <p>Analytics</p>
+      <p class="title">Features</p>
+      <p class="item">Link Shortening</p>
+      <p class="item">Branded Links</p>
+      <p class="item">Analytics</p>
     </div>
 
     <div class="footer_ressources">
-      <p>Ressources</p>
-      <p>Blog</p>
-      <p>Deveelopers</p>
-      <p>Support</p>
+      <p class="title">Ressources</p>
+      <p class="item">Blog</p>
+      <p class="item">Deveelopers</p>
+      <p class="item">Support</p>
     </div>
 
     <div class="footer_company">
-      <p>Company</p>
-      <p>About</p>
-      <p>Our Team</p>
-      <p>Careers</p>
-      <p>Contact</p>
+      <p class="title">Company</p>
+      <p class="item">About</p>
+      <p class="item">Our Team</p>
+      <p class="item">Careers</p>
+      <p class="item">Contact</p>
     </div>
 
     <div class="footer_socials">
@@ -58,5 +58,18 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.item {
+  color: var(--gray);
+}
+
+.item:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 </style>

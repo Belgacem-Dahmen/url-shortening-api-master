@@ -1,4 +1,18 @@
-<script lang="ts"></script>
+<script lang="ts">
+import { ref } from "vue";
+export default {
+  setup() {
+    const url = ref("");
+    const shortenUrl = (url) => {
+      return url;
+    };
+    return {
+      url,
+      shortenUrl,
+    };
+  },
+};
+</script>
 
 <template>
   <div class="SearchItem">
@@ -6,8 +20,9 @@
       class="SearchItem_input"
       type="text"
       placeholder="Shorten a link here..."
+      v-model="url"
     />
-    <button class="SearchItem_button">Shorten it</button>
+    <button @click="shortenUrl" class="SearchItem_button">Shorten it</button>
   </div>
 </template>
 
